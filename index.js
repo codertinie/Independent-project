@@ -1,4 +1,4 @@
-  const BMSAPI = 'http://localhost:3000/Books'
+  const BMSAPI = 'http://localhost:3000/Books/'
   const bookAvailable = document.getElementById('bks_available')
   const bookToOrder = document.getElementById('order')
   const subscribers = document.getElementById('subs')
@@ -8,10 +8,24 @@
   .then (renderGram);
 
   function renderGram(data){
-    console.log(data[2].title)
-    console.log(data[2].Description)
-    console.log(data[2].Quantity)
+
+// console.log(data[0].title) testing in console
+
+
+    renderBook(data[0].title)
+    renderBook(data[1].title)
+    renderBook(data[2].title)
   } 
+
+
+
+function renderBook(title){
+  const li = document.createElement('li')
+  li.textContent = `${title}`
+  console.log(li)
+  bks_available.append(li)
+}
+
 // DOM manipulation 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -20,6 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault()
     AddBook(e.target.b_title.value)
     form.reset()
+
+  // document.querySelector('#btn').addEventListener('click', (e) => {
+  //   console.log(e)})
 })
 
 
@@ -38,3 +55,4 @@ function AddBook(title){
 function DeleteBook(e){
   e.target.parentNode.remove()
 }
+
