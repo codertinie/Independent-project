@@ -41,4 +41,4 @@ that you can access the server at `http://localhost:3000`.
 
 To access the books in the server use the following port
 
-  http://localhost:3000/Books
+  http://localhost:3000/Books/1

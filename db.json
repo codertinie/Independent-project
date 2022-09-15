@@ -1,22 +1,28 @@
 {
-    "Books": [
-      {
-        "id": 1,
-        "title": "Learning HTML ",
-        "Description": "A comprehensive HTML tutorial for beginners",
-        "Quantity" : "11"
-      },
-      {
-        "id": 2,
-        "title": "Learning Javascript",
-        "Description": "A comprehensive JavaScript tutorial for beginners",
-        "Quantity" : "3"
-      },
-      {
-        "id": 3,
-        "title": "Learning CSS",
-        "Description": "A comprehensive CSS tutorial for beginners",
-        "Quantity" : "20"
-      }
-    ]
-  }
+  "Books": [
+    {
+      "id": 1,
+      "title": "Learning HTML ",
+      "Description": "A comprehensive HTML tutorial for beginners",
+      "Quantity" : "11"
+    },
+    {
+      "id": 2,
+      "title": "Learning Javascript",
+      "Description":"A comprehensive JavaScript tutorial for beginners",
+      "Quantity" : "3"
+    },
+    {
+      "id": 3,
+      "title": "Learning CSS",
+      "Description": "A comprehensive CSS tutorial for beginners",
+      "Quantity" : "20"
+    }
+  ],
+  "Subscribers" : [
+    {
+    "name" : "Martin Munyao",
+    "ID" : "32441868"
+    }
+  ]
+}
