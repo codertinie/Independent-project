@@ -27,3 +27,18 @@ Create an online application that allows bookstore owners to keep track of their
 
 https://github.com/codertinie/Independent-project
 
+# API 
+json-server
+
+To begin using the application start json server using the following command
+
+`console
+$ json-server --watch db.json
+```
+When run, you'll see some messaging about how to access our JSON data. By
+default, JSON Server will start up on port `3000`. You should see a notice
+that you can access the server at `http://localhost:3000`.
+
+To access the books in the server use the following port
+
+  http://localhost:3000/Books
