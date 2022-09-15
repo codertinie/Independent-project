@@ -1,13 +1,13 @@
-  const BMSAPI = 'http://localhost:3000/Books/'
+  const BMSAPI = 'http://localhost:3000/Books'
   const bookAvailable = document.getElementById('bks_available')
   const bookToOrder = document.getElementById('order')
   const subscribers = document.getElementById('subs')
 
   fetch(BMSAPI)
   .then((res) => res.json())
-  .then (renderGram);
+  .then (renderData);
 
-  function renderGram(data){
+  function renderData(data){
 
 // console.log(data[0].title) testing in console
 
@@ -15,15 +15,23 @@
     renderBook(data[0].title)
     renderBook(data[1].title)
     renderBook(data[2].title)
+
+    renderSubs(data[3].name)
   } 
-
-
 
 function renderBook(title){
   const li = document.createElement('li')
   li.textContent = `${title}`
-  console.log(li)
+  console.log(li) //testing
   bks_available.append(li)
+}
+
+
+function renderSubs(name){
+const li = document.createElement('li')
+  li.textContent= name
+  console.log(li)
+  subs.append(li)
 }
 
 // DOM manipulation 
