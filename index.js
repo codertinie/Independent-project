@@ -24,14 +24,13 @@
 function renderBook(title){
   const li = document.createElement('li')
   li.textContent = `${title}`
-  console.log(li) //testing
+  // console.log(li) //testing
   bks_available.append(li)
 }
 
 function renderSubs(name){
 const li = document.createElement('li')
   li.textContent= name
-  console.log(li) //Testing in the console
   subs.append(li)
 }
 
@@ -44,7 +43,6 @@ function renderOrders(data){
   li.innerText = data
   order.append(li)
 
-  console.log('li')
 }
 
 // DOM manipulation 
@@ -57,6 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
     form.reset()
 
 })
+//An alert button for Offers
+document.querySelector('button').addEventListener('click', function(){
+  alert('SORRY! NO OFFERS TILL DECEMBER!')
+}
+)
 
 })
 // Adding books to the library
@@ -69,7 +72,7 @@ function AddBook(title){
   l.appendChild(btn)
   document.querySelector('#bks_available').appendChild(l)
 }
-// rmoving books from library
+// removing books from library
 function DeleteBook(e){
   e.target.parentNode.remove()
 }
