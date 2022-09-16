@@ -9,7 +9,6 @@
 
 
   function renderData(data){
- //testing in console
 
     renderBook(data[0].title)
     renderBook(data[1].title)
@@ -25,7 +24,6 @@
 function renderBook(title){
   const li = document.createElement('li')
   li.textContent = `${title}`
-  // console.log(li) //testing
   bks_available.append(li)
 }
 
@@ -43,7 +41,6 @@ function renderOrders(data){
   }
   li.innerText = data
   order.append(li)
-
 }
 
 // DOM manipulation 
@@ -59,9 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //An alert button for Offers
 document.querySelector('button').addEventListener('click', function(){
   alert('SORRY! NO OFFERS TILL DECEMBER!')
-}
-)
-
+})
 })
 // Adding books to the library
 function AddBook(title){
@@ -77,25 +72,3 @@ function AddBook(title){
 function DeleteBook(e){
   e.target.parentNode.remove()
 }
-
-// function handleAddBook(e){
-//   e.preventDefault()
-//   let bookObj ={
-//     title:e.target.b_title.value,
-//     Quantity:e.target.b_quantity.value
-//   }
-//   AddBook(bookObj)
-//   adding(bookObj)
-// }
-
-// function adding(bookObj){
-//   fetch('http://localhost:3000/Books', {
-//     method: 'POST',
-//     headers: {
-//       'contet-Type': 'application/json'
-//     },
-//     body:JSON.stringify(bookObj)
-//   })
-//   .then(res => res.json())
-//   .then(title => console.log(title))
-// }

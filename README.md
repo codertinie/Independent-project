@@ -20,13 +20,14 @@ Create an online application that allows bookstore owners to keep track of their
     • Books available
     • Books almost running out of stock
     • Landing page
+    • Offer availability
 
 # Deliverables
 
-The user can add books to the web application and remove them 
-Users can also check whether there are any offers available and when they will be available
-Users can also see a list of subscribers who are eligible for offers
-Finally there is a section for quotes to help motivate users to read more books
+The user can add books to the web application and remove them. 
+Users can also check whether there are any offers available and when they will be available. 
+Users can also see a list of subscribers who are eligible for offers and 
+finally there is a section for quotes to help motivate users to read more books.
 
 # Github link
 
