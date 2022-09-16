@@ -16,6 +16,7 @@
     renderBook(data[2].title)
 
     renderSubs(data[3].name)
+    renderSubs(data[4].name)
 
     renderOrders(data[1].title)
     
